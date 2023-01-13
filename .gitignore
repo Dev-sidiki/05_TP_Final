@@ -1,0 +1,3 @@
+# on liste les fichier à ne pas partager(pusher)
+/node_modules
+/config/.env

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="//unpkg.com/semantic-ui@2.4.2/dist/semantic.min.css")
+        link(rel="stylesheet", href="/css/styles.css")
+        script(src="//unpkg.com/jquery@3.1.1/dist/jquery.min.js")
+        script(src="//unpkg.com/semantic-ui@2.4.2/dist/semantic.min.js")
+        block scripts
+
+        title Hello Express Pug App!
+    body
+
+        .ui.inverted.menu
+            .right.menu
+                if foundUser
+                    a.item(href="/dashboard", class= "active")
+                        i.user.icon
+                        | #{foundUser.firstName} #{foundUser.lastName}
+                    a.item(href="/deconnexion")
+                        i.file.icon
+                        | Déconnexion
+                else
+                    a.item(href="/", class= "active")
+                        i.home.icon
+                        | Home
+                    a.item(href="/inscription",  class= "active")
+                        i.user.icon
+                        | Inscription
+                    a.item(href="/connexion",  class= "active")
+                        i.sign.in.alternate.icon
+                        | Connexion    
+        block content
+
+        footer © Tous droits réservés

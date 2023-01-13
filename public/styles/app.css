@@ -1,0 +1,134 @@
+body {
+  background: #67be4b;
+}
+/* #container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+} */
+/* Bordered form */
+/* form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+} */
+/* #container h1 {
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+} */
+
+/* Full-width inputs */
+/* input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+} */
+
+/* Set a style for all buttons */
+/* input[type="submit"] {
+  background-color: #53af57;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+} */
+
+/* input[type="submit"]:hover {
+  background-color: white;
+  color: #53af57;
+  border: 1px solid #53af57;
+}
+
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background: #67be4b;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.logo span {
+  color: rgb(70, 28, 143);
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a:hover {
+  color: rgb(8, 2, 28);
+  text-decoration: none;
+}
+
+.topbarIconItemInfo {
+  cursor: pointer;
+  position: relative;
+  color: whitesmoke;
+  padding: 6px;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+  color: rgb(49, 77, 58);
+  border-width: 2px 4px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .topbarLink {
+    display: none;
+  }
+} */

@@ -1,0 +1,23 @@
+extends ../layouts/frontend
+
+block content
+    .ui.middle.aligned.center.aligned.grid
+        .six.wide.column
+            h1 CONNEXION
+
+            if errorMessage
+                .ui.error.message!= errorMessage
+            
+            form.ui.large.form(method="post", action="/connexion")
+                .ui.stacked.segment
+                    +field('email', 'email', 'your.email@address.tld', values && values.email)
+                    +field('password', 'password', 'Password', values && values.password)
+                    button(type="submit").ui.fluid.large.teal.submit.button SE CONNECTER 
+                        i.toggle.on.icon 
+
+
+mixin field(type, name, placeholder)
+    .field
+        .ui.left.icon.input
+            i.icon(class=(type === 'password' ? 'lock' : 'user'))
+            input(type=type, name=name, placeholder=placeholder)

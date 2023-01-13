@@ -1,0 +1,24 @@
+extends ../layouts/frontend
+
+
+block content
+    .ui.middle.aligned.center.aligned.grid
+        .six.wide.column
+            h1 INSCRIPTION
+            form.ui.large.form(method="post", action="/inscription")
+                .ui.stacked.segment
+                    +field('text', 'firstName', 'First name')
+                    +field('text', 'lastName', 'Last name')
+                    +field('email', 'email', 'your.email@address.tld')
+                    +field('password', 'password', 'Password')
+                    +field('password', 'passwordConfirm', 'Confirm password')
+                    button(type="submit").ui.fluid.large.teal.submit.button S'INSCRIRE
+
+                .ui.error.message
+
+
+mixin field(type, name, placeholder)
+    .field
+        .ui.left.icon.input
+            i.icon(class=(type === 'password' ? 'lock' : 'user'))
+            input(type=type, name=name, placeholder=placeholder)

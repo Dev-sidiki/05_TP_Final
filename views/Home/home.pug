@@ -1,0 +1,19 @@
+extends ../layouts/frontend
+
+
+block content
+    .ui.middle.aligned.center.aligned.grid
+        .six.wide.column
+            h1 Bienvenue sur<strong> ENREGISTREMENT_FACILE </strong> 
+            p Cette application permet d'enregistrer les utilisateurs en fonction du nom, prenom, email et du mot de passe.
+            p Pour profiter pleinement des fonctionnalités présentes et même futures de l'application, il faudra avoir un compte utilisateur.
+            p Vous trouverez ci-dessous un lien permet de vous inscrire.
+            a.item(href="/inscription", class="active")
+                i.hand.point.right.icon
+                | inscrivez-vous
+            br
+            br
+            p Avez-vous déja un compte?
+            a.item(href="/connexion", class="active")
+                i.hand.point.right.icon
+                | connectez-vous  
